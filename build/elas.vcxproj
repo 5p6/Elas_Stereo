@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06586E87-3466-38DC-AEF6-9A8EE76A1DC0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>elas</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\C++\elasdisp\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">elas.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">elas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\C++\elasdisp\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">elas.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">elas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\C++\elasdisp\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">elas.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">elas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\C++\elasdisp\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">elas.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">elas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/newapp/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/newapp/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/newapp/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/newapp/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\lib\pcl\pcl\PCL-1.12.0\include\pcl-1.12;F:\newapp\vcpkg\installed\x64-windows\include\eigen3;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Boost\include\boost-1_76;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\Qhull\include;E:\code\C++\elasdisp\.;E:\code\C++\elasdisp\.\Elas;F:\newapp\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\code\C++\elasdisp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/code/C++/elasdisp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\APP\CMake\Cmake\bin\cmake.exe -SE:/code/C++/elasdisp -BE:/code/C++/elasdisp/build --check-stamp-file E:/code/C++/elasdisp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\ExternalData.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindBoost.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindHDF5.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindLibArchive.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPkgConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindTIFF.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindThreads.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindZLIB.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeSystem.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindEigen.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindFLANN.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindOpenNI2.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindQhull.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfig.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\libarchive\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\C++\elasdisp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/code/C++/elasdisp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\APP\CMake\Cmake\bin\cmake.exe -SE:/code/C++/elasdisp -BE:/code/C++/elasdisp/build --check-stamp-file E:/code/C++/elasdisp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\ExternalData.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindBoost.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindHDF5.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindLibArchive.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPkgConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindTIFF.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindThreads.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindZLIB.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeSystem.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindEigen.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindFLANN.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindOpenNI2.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindQhull.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfig.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\libarchive\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\C++\elasdisp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/code/C++/elasdisp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\APP\CMake\Cmake\bin\cmake.exe -SE:/code/C++/elasdisp -BE:/code/C++/elasdisp/build --check-stamp-file E:/code/C++/elasdisp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\ExternalData.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindBoost.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindHDF5.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindLibArchive.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPkgConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindTIFF.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindThreads.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindZLIB.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeSystem.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindEigen.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindFLANN.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindOpenNI2.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindQhull.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfig.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\libarchive\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\C++\elasdisp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/code/C++/elasdisp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\APP\CMake\Cmake\bin\cmake.exe -SE:/code/C++/elasdisp -BE:/code/C++/elasdisp/build --check-stamp-file E:/code/C++/elasdisp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\ExternalData.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindBoost.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindHDF5.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindLibArchive.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindPkgConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindTIFF.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindThreads.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\FindZLIB.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\APP\CMake\Cmake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\code\C++\elasdisp\build\CMakeFiles\3.24.1\CMakeSystem.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;E:\lib\pcl\pcl\PCL-1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindEigen.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindFLANN.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindOpenNI2.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\Modules\FindQhull.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfig.cmake;E:\lib\pcl\pcl\PCL-1.12.0\cmake\PCLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\WebP\WebPTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\hdf5-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\hdf5\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\leptonica\LeptonicaTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\libarchive\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\openjpeg\OpenJPEGTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config-version.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-config.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\szip\szip-targets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfig.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractConfigVersion.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-debug.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets-release.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tesseract\TesseractTargets.cmake;F:\newapp\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\newapp\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\C++\elasdisp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\code\C++\elasdisp\Elas\descriptor.cpp" />
+    <ClCompile Include="E:\code\C++\elasdisp\Elas\elas.cpp" />
+    <ClCompile Include="E:\code\C++\elasdisp\Elas\filter.cpp" />
+    <ClCompile Include="E:\code\C++\elasdisp\Elas\matrix.cpp" />
+    <ClCompile Include="E:\code\C++\elasdisp\Elas\triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\code\C++\elasdisp\build\ZERO_CHECK.vcxproj">
+      <Project>{988054E3-EC24-326B-9765-0DC7DFB67760}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
